@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Idéhistoria – Pluggsida</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo">📜 Idéhistoria</div>
+    <div class="nav-links">
+      <button class="nav-btn active" onclick="showPage('info')">📖 Info</button>
+      <button class="nav-btn" onclick="showPage('flashcards')">🃏 Flashcards</button>
+      <button class="nav-btn" onclick="showPage('practice')">🎯 Övning</button>
+    </div>
+  </nav>
+
+  <!-- ============ INFO PAGE ============ -->
+  <div id="page-info" class="page active">
+    <div class="page-header">
+      <h1>Idéhistoria</h1>
+      <p class="subtitle">Allt du behöver inför provet – del för del</p>
+    </div>
+
+    <div class="sections-grid">
+
+      <!-- 1. RENÄSSANSEN -->
+      <div class="section-card" id="renaissance">
+        <div class="section-icon">🌍</div>
+        <h2>1. Renässansen <span class="era">(1400–1500-tal)</span></h2>
+        <p class="definition">"Pånyttfödelse" av antiken</p>
+        <div class="info-block">
+          <h3>📍 Fakta</h3>
+          <ul>
+            <li>Började i <strong>Italien (Florens)</strong></li>
+            <li>Rik familj: <strong>Medici</strong></li>
+            <li>Fokus på: individualism, livsglädje, <em>människan i centrum</em></li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>🎨 Konst & Musik</h3>
+          <ul>
+            <li>Realistisk konst & perspektiv</li>
+            <li>Musik: <strong>Palestrina</strong> (flerstämmigt)</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>👤 Kända personer</h3>
+          <div class="person-chips">
+            <span class="chip">Leonardo da Vinci</span>
+            <span class="chip">Michelangelo</span>
+            <span class="chip">Rafael</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. HUMANISM -->
+      <div class="section-card" id="humanism">
+        <div class="section-icon">🎭</div>
+        <h2>2. Humanism</h2>
+        <p class="definition">Människan i centrum</p>
+        <div class="info-block">
+          <h3>💡 Tankar</h3>
+          <ul>
+            <li>Inspirerade av antiken (Platon)</li>
+            <li>Människan kan <strong>tänka själv</strong></li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>👤 Viktiga personer</h3>
+          <div class="person-chips">
+            <span class="chip">Machiavelli → "Fursten"</span>
+            <span class="chip">Erasmus → tro på godhet</span>
+            <span class="chip">Thomas More → "Utopia"</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. UPPFINNINGAR -->
+      <div class="section-card" id="uppfinningar">
+        <div class="section-icon">⚙️</div>
+        <h2>3. Viktiga Uppfinningar</h2>
+        <div class="info-block">
+          <ul>
+            <li><strong>Papper</strong> (från Kina)</li>
+            <li><strong>Boktryckarkonsten</strong> (Gutenberg) → spred kunskap snabbt</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4. UPPTÄCKTSRESOR -->
+      <div class="section-card" id="resor">
+        <div class="section-icon">🚢</div>
+        <h2>4. Upptäcktsresor</h2>
+        <div class="info-block">
+          <h3>❓ Varför?</h3>
+          <ul>
+            <li>Nya handelsvägar</li>
+            <li>Ny teknik (kompass, bättre båtar)</li>
+            <li>Pengar (kapitalism)</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>🗺️ Viktiga resor</h3>
+          <ul>
+            <li><strong>1492:</strong> Columbus → Amerika</li>
+            <li><strong>Vasco da Gama</strong> → Indien</li>
+            <li><strong>Magellan</strong> → jorden runt</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>⚠️ Konsekvenser</h3>
+          <ul>
+            <li>Kolonier</li>
+            <li>Slaveri</li>
+            <li>Sjukdomar → urbefolkning dog</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 5. EKONOMI -->
+      <div class="section-card" id="ekonomi">
+        <div class="section-icon">💰</div>
+        <h2>5. Ekonomi & Merkantilism</h2>
+        <div class="info-block">
+          <h3>📊 Merkantilism</h3>
+          <ul>
+            <li>Export &gt; import</li>
+            <li>Staten ska bli rik</li>
+            <li>Tullar och produktion</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 6. ABSOLUTISM -->
+      <div class="section-card" id="absolutism">
+        <div class="section-icon">👑</div>
+        <h2>6. Absolutism (Envälde)</h2>
+        <p class="definition">Kungen har ALL makt ("av guds nåd")</p>
+        <div class="info-block">
+          <h3>👤 Exempel</h3>
+          <div class="person-chips">
+            <span class="chip">Ludvig XIV (Frankrike) → stark</span>
+            <span class="chip">Habsburg → svag</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. PARLAMENTARISM -->
+      <div class="section-card" id="parlamentarism">
+        <div class="section-icon">🏛️</div>
+        <h2>7. Parlamentarism (England)</h2>
+        <div class="info-block">
+          <h3>⚔️ Konflikten</h3>
+          <ul>
+            <li>Kung vs parlament</li>
+            <li>Inbördeskrig → kung <strong>avrättas</strong></li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>1688: Ärorika revolutionen</h3>
+          <ul>
+            <li>Maktdelning</li>
+            <li>Konstitutionell monarki</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 8. VETENSKAPLIGA REVOLUTIONEN -->
+      <div class="section-card wide" id="vetenskap">
+        <div class="section-icon">🔬</div>
+        <h2>8. Vetenskapliga Revolutionen</h2>
+        <div class="two-col">
+          <div class="info-block">
+            <h3>🌌 Världsbilder</h3>
+            <ul>
+              <li><strong>Geocentrisk:</strong> Jorden i centrum (Ptolemaios)</li>
+              <li><strong>Heliocentrisk:</strong> Solen i centrum (Kopernikus)</li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3>🔭 Viktiga Forskare</h3>
+            <ul>
+              <li>🔭 <strong>Kopernikus</strong> – Solen i centrum</li>
+              <li>🔥 <strong>Giordano Bruno</strong> – Universum oändligt, bränd på bål</li>
+              <li>🧠 <strong>Tycho Brahe</strong> – Blandmodell</li>
+              <li>📐 <strong>Kepler</strong> – Elliptiska banor</li>
+              <li>🔭 <strong>Galileo Galilei</strong> – Teleskop, dömd av kyrkan</li>
+              <li>🍎 <strong>Newton</strong> – Gravitation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. REFORMATIONEN -->
+      <div class="section-card" id="reformationen">
+        <div class="section-icon">⛪</div>
+        <h2>9. Reformationen</h2>
+        <div class="info-block">
+          <h3>Martin Luther (1517)</h3>
+          <ul>
+            <li>95 teser</li>
+            <li>Kritiserade <strong>avlatsbrev</strong></li>
+            <li>Tro → frälsning</li>
+            <li>Bibeln viktigast</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>👤 Andra</h3>
+          <div class="person-chips">
+            <span class="chip">Calvin → predestination</span>
+            <span class="chip">Zwingli → enklare kyrka</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. MOTREFORMATION -->
+      <div class="section-card" id="motreformation">
+        <div class="section-icon">⚔️</div>
+        <h2>10. Motreformation</h2>
+        <div class="info-block">
+          <ul>
+            <li>Katolska kyrkan svarar</li>
+            <li><strong>Jesuitorden</strong></li>
+            <li><strong>Tridentinska mötet</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 11. 30-ÅRIGA KRIGET -->
+      <div class="section-card" id="kriget">
+        <div class="section-icon">💣</div>
+        <h2>11. 30-åriga Kriget <span class="era">(1618–1648)</span></h2>
+        <div class="info-block">
+          <h3>💥 Orsak</h3>
+          <ul>
+            <li>Katoliker vs protestanter</li>
+            <li>Maktkamp</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>📌 Viktigt</h3>
+          <ul>
+            <li>Sverige deltog (<strong>Gustav II Adolf</strong>)</li>
+            <li>Väldigt brutalt krig</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>🏳️ Slut: Westfaliska Freden</h3>
+          <ul>
+            <li>Sverige fick områden</li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- /sections-grid -->
+
+    <!-- SNABBKOLL -->
+    <div class="quick-ref">
+      <h2>🔥 Viktigaste att kunna</h2>
+      <div class="quick-grid">
+        <div class="quick-item">Renässansen = <strong>människan i centrum</strong></div>
+        <div class="quick-item">Humanism = <strong>tänka själv</strong></div>
+        <div class="quick-item">Upptäcktsresor = <strong>handel + kolonier</strong></div>
+        <div class="quick-item">Absolutism = <strong>kung har all makt</strong></div>
+        <div class="quick-item">Heliocentrisk = <strong>solen i centrum</strong></div>
+        <div class="quick-item">Reformationen = <strong>Luther protesterar</strong></div>
+        <div class="quick-item">30-åriga kriget = <strong>religion + makt</strong></div>
+      </div>
+    </div>
+
+  </div>
+  <!-- /page-info -->
+
+  <!-- ============ FLASHCARDS PAGE ============ -->
+  <div id="page-flashcards" class="page">
+    <div class="page-header">
+      <h1>🃏 Flashcards</h1>
+      <p class="subtitle">Välj ett ämne och testa dig själv</p>
+    </div>
+
+    <div class="topic-selector">
+      <button class="topic-btn active" onclick="setTopic('all')">Alla</button>
+      <button class="topic-btn" onclick="setTopic('renaissance')">🌍 Renässansen</button>
+      <button class="topic-btn" onclick="setTopic('humanism')">🎭 Humanism</button>
+      <button class="topic-btn" onclick="setTopic('resor')">🚢 Upptäcktsresor</button>
+      <button class="topic-btn" onclick="setTopic('vetenskap')">🔬 Vetenskap</button>
+      <button class="topic-btn" onclick="setTopic('religion')">⛪ Religion & Krig</button>
+      <button class="topic-btn" onclick="setTopic('politik')">👑 Politik</button>
+    </div>
+
+    <div class="card-area">
+      <div class="flashcard" id="flashcard" onclick="flipCard()">
+        <div class="card-inner" id="cardInner">
+          <div class="card-front">
+            <div class="card-topic-label" id="cardTopic"></div>
+            <p id="cardQuestion">Klicka på ett ämne för att börja!</p>
+          </div>
+          <div class="card-back">
+            <p id="cardAnswer"></p>
+          </div>
+        </div>
+      </div>
+      <p class="flip-hint">Klicka på kortet för att vända</p>
+    </div>
+
+    <div class="card-controls">
+      <button class="ctrl-btn" onclick="prevCard()">← Föregående</button>
+      <span class="card-counter" id="cardCounter">–</span>
+      <button class="ctrl-btn" onclick="nextCard()">Nästa →</button>
+    </div>
+  </div>
+  <!-- /page-flashcards -->
+
+  <!-- ============ PRACTICE PAGE ============ -->
+  <div id="page-practice" class="page">
+    <div class="page-header">
+      <h1>🎯 Övning</h1>
+      <p class="subtitle">Svara rätt på 80% för att klara nivån!</p>
+    </div>
+
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div class="score-display">
+      <span id="scoreText">0 rätt av 0</span>
+      <span id="percentText" class="percent">–</span>
+    </div>
+
+    <div class="practice-box" id="practiceBox">
+      <div class="q-topic" id="qTopic"></div>
+      <h2 class="question-text" id="questionText">Laddar fråga...</h2>
+
+      <div class="hint-area">
+        <button class="hint-btn" id="hint1Btn" onclick="showHint(1)">💡 Liten hint</button>
+        <button class="hint-btn" id="hint2Btn" onclick="showHint(2)">🔦 Stor hint</button>
+        <div class="hint-box" id="hintBox"></div>
+      </div>
+
+      <input type="text" id="answerInput" class="answer-input" placeholder="Skriv ditt svar här..." />
+      <button class="submit-btn" onclick="submitAnswer()">✅ Svara</button>
+
+      <div class="feedback-box" id="feedbackBox"></div>
+    </div>
+
+    <div class="practice-win" id="practiceWin" style="display:none">
+      <div class="win-emoji">🏆</div>
+      <h2>Bra jobbat!</h2>
+      <p id="winText"></p>
+      <button class="submit-btn" onclick="restartPractice()">Kör igen!</button>
+    </div>
+  </div>
+  <!-- /page-practice -->
+
+  <script src="script.js"></script>
+</body>
+</html>
