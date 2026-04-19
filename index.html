@@ -8,8 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
-
-  <!-- NAV -->
+ 
   <nav class="navbar">
     <div class="logo">📜 Idéhistoria</div>
     <div class="nav-links">
@@ -18,287 +17,409 @@
       <button class="nav-btn" onclick="showPage('practice')">🎯 Övning</button>
     </div>
   </nav>
-
-  <!-- ============ INFO PAGE ============ -->
+ 
+  <!-- INFO PAGE -->
   <div id="page-info" class="page active">
     <div class="page-header">
       <h1>Idéhistoria</h1>
-      <p class="subtitle">Allt du behöver inför provet – del för del</p>
+      <p class="subtitle">Alla Gleerups-frågor besvarade – del för del</p>
     </div>
-
+ 
     <div class="sections-grid">
-
-      <!-- 1. RENÄSSANSEN -->
+ 
+      <div class="section-card wide" id="resor">
+        <div class="section-icon">🚢</div>
+        <h2>Upptäcktsresor & Kolonialism</h2>
+        <div class="two-col">
+          <div>
+            <div class="info-block">
+              <h3>Varför kallas de "indianer"?</h3>
+              <ul>
+                <li>Columbus trodde han nått <strong>Indien</strong> när han landade i Amerika 1492</li>
+                <li>Han kallade invånarna <em>indios</em> – namnet fastnade trots att det var fel</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Ekonomisk drivkraft bakom resorna</h3>
+              <ul>
+                <li>Vilja att hitta nya, <strong>billigare handelsvägar</strong> till Asiens kryddor och lyxvaror</li>
+                <li>Den gamla landruten kontrollerades av osmaner och arabiska handelsmän</li>
+                <li>Sjövägen till Indien = mycket billigare transport</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Förbättringar i navigationskonsten</h3>
+              <ul>
+                <li><strong>Kompassen</strong> – angav riktning på öppet hav</li>
+                <li><strong>Astrolabiet</strong> – mätte latitud med stjärnornas position</li>
+                <li>Bättre kartor och <strong>karavellskeppet</strong> (mer manövrerbart)</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Europa vs Asien – vem var framstående?</h3>
+              <ul>
+                <li><strong>Europa:</strong> militär teknik, skjutvapen, sjöfart</li>
+                <li><strong>Asien:</strong> hantverk, kryddor, siden, porslin, matematik & astronomi</li>
+                <li>Europa ville ha Asiens varor → handeln gick mest åt ett håll → européerna betalade med silver</li>
+                <li>Asien visade lite intresse för europeiska varor</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Vad betydde sjövägen för handelskostnaderna?</h3>
+              <ul>
+                <li>Enormt billigare – man slapp betala tullar och mellanhänder längs landruten</li>
+                <li>Mer varor till lägre kostnad per enhet</li>
+                <li>Europas handelscentra skiftade från Medelhavet till Atlanten</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="info-block">
+              <h3>Varför var mötet mer ödesdigert i Amerika än Asien?</h3>
+              <ul>
+                <li>Amerikanerna saknade <strong>immunitet</strong> mot europeiska sjukdomar (smittkoppor, mässling)</li>
+                <li>I Asien hade folk levt i kontakt med Europa länge → viss immunitet</li>
+                <li>Upp till <strong>90%</strong> av urbefolkningen i Amerika dog av sjukdomar</li>
+                <li>Dessutom: direkt erövring, slaveri och förstörelse av kulturer</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Tre amerikanska grödor som spred sig till Europa</h3>
+              <div class="person-chips">
+                <span class="chip">Potatis</span><span class="chip">Majs</span><span class="chip">Tomat</span><span class="chip">Kakao</span><span class="chip">Tobak</span>
+              </div>
+            </div>
+            <div class="info-block">
+              <h3>Vilka viktiga komponenter saknades i amerikanska högkulturer?</h3>
+              <ul>
+                <li>Hjulet användes inte i praktiken</li>
+                <li>Inga dragdjur (hästar, oxar) för jordbruk och transport</li>
+                <li>Ingen järnteknik</li>
+                <li>Begränsad skriftkultur (utom mayaskrift)</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Hur kunde de ändå bygga högtstående civilisationer?</h3>
+              <ul>
+                <li>Avancerat jordbruk med terrasser och bevattningssystem</li>
+                <li>Stark organisation och centralmakt (Inca, Aztec)</li>
+                <li>Sofistikerad matematik, astronomi och arkitektur</li>
+                <li>Anpassade smarta lösningar till sin miljö</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Vilka resurser & kunskaper var intressanta för européerna?</h3>
+              <ul>
+                <li>Guld och silver (Peru, Mexiko)</li>
+                <li>Nya grödor (potatis, majs, tobak, kakao)</li>
+                <li>Bördig mark för socker och bomull</li>
+                <li>Kunskap om lokala växter och mediciner</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="section-card" id="kapitalism">
+        <div class="section-icon">💰</div>
+        <h2>Kapitalism & Ekonomi</h2>
+        <div class="info-block">
+          <h3>Varför var långväga handel ett genombrott för kapitalismen?</h3>
+          <ul>
+            <li>Krävde stora <strong>investeringar</strong> i förväg (skepp, last, besättning)</li>
+            <li>Investerare tog risk men kunde få enorm vinst → grunden för kapitalism</li>
+            <li>Uppkomsten av <strong>handelskompanjier</strong> (aktier, riskdelning)</li>
+            <li>Pengar satte i rörelse mer pengar – inte bara byte av varor</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Vad innebar förlagssystemet?</h3>
+          <ul>
+            <li>En köpman köpte råmaterial och "förlade" det till hemarbetare</li>
+            <li>Hemarbetarna tillverkade varor hemma (t.ex. vävde tyg)</li>
+            <li>Köpmannen samlade in och sålde de färdiga varorna</li>
+            <li>Tidig form av industriproduktion – arbetaren ägde inte produktionsmedlen</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Varför steg priserna på 1500–1600-talen?</h3>
+          <ul>
+            <li>Massiva mängder <strong>silver och guld</strong> från Amerika strömmade in i Europa</li>
+            <li>Mer pengar i omlopp men inte mer varor → inflation</li>
+            <li>Befolkningstillväxt ökade efterfrågan på mat</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Hur försörjde sig de flesta vid den här tiden?</h3>
+          <ul>
+            <li>De flesta var <strong>bönder</strong> och levde av eget jordbruk</li>
+            <li>Subsistensekonomin dominerade – man odlade det man åt</li>
+            <li>Lite överskott såldes på lokala marknader</li>
+          </ul>
+        </div>
+      </div>
+ 
       <div class="section-card" id="renaissance">
         <div class="section-icon">🌍</div>
-        <h2>1. Renässansen <span class="era">(1400–1500-tal)</span></h2>
-        <p class="definition">"Pånyttfödelse" av antiken</p>
+        <h2>Renässansen</h2>
         <div class="info-block">
-          <h3>📍 Fakta</h3>
+          <h3>Hur förhöll sig renässansen till tidigare epoker?</h3>
           <ul>
-            <li>Började i <strong>Italien (Florens)</strong></li>
-            <li>Rik familj: <strong>Medici</strong></li>
-            <li>Fokus på: individualism, livsglädje, <em>människan i centrum</em></li>
-          </ul>
-        </div>
-        <div class="info-block">
-          <h3>🎨 Konst & Musik</h3>
-          <ul>
-            <li>Realistisk konst & perspektiv</li>
-            <li>Musik: <strong>Palestrina</strong> (flerstämmigt)</li>
-          </ul>
-        </div>
-        <div class="info-block">
-          <h3>👤 Kända personer</h3>
-          <div class="person-chips">
-            <span class="chip">Leonardo da Vinci</span>
-            <span class="chip">Michelangelo</span>
-            <span class="chip">Rafael</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2. HUMANISM -->
-      <div class="section-card" id="humanism">
-        <div class="section-icon">🎭</div>
-        <h2>2. Humanism</h2>
-        <p class="definition">Människan i centrum</p>
-        <div class="info-block">
-          <h3>💡 Tankar</h3>
-          <ul>
-            <li>Inspirerade av antiken (Platon)</li>
-            <li>Människan kan <strong>tänka själv</strong></li>
-          </ul>
-        </div>
-        <div class="info-block">
-          <h3>👤 Viktiga personer</h3>
-          <div class="person-chips">
-            <span class="chip">Machiavelli → "Fursten"</span>
-            <span class="chip">Erasmus → tro på godhet</span>
-            <span class="chip">Thomas More → "Utopia"</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3. UPPFINNINGAR -->
-      <div class="section-card" id="uppfinningar">
-        <div class="section-icon">⚙️</div>
-        <h2>3. Viktiga Uppfinningar</h2>
-        <div class="info-block">
-          <ul>
-            <li><strong>Papper</strong> (från Kina)</li>
-            <li><strong>Boktryckarkonsten</strong> (Gutenberg) → spred kunskap snabbt</li>
+            <li>Bröt med medeltidens <strong>gudcentrerade</strong> världsbild</li>
+            <li>Återvände till antikens ideal – kombinerade med kristen tid</li>
+            <li>Medeltiden = Gud & kyrkan i centrum. Renässansen = <strong>människan</strong> i centrum</li>
+            <li>"Pånyttfödelse" av antikens filosofi, konst och vetenskap</li>
           </ul>
         </div>
       </div>
-
-      <!-- 4. UPPTÄCKTSRESOR -->
-      <div class="section-card" id="resor">
-        <div class="section-icon">🚢</div>
-        <h2>4. Upptäcktsresor</h2>
-        <div class="info-block">
-          <h3>❓ Varför?</h3>
-          <ul>
-            <li>Nya handelsvägar</li>
-            <li>Ny teknik (kompass, bättre båtar)</li>
-            <li>Pengar (kapitalism)</li>
-          </ul>
-        </div>
-        <div class="info-block">
-          <h3>🗺️ Viktiga resor</h3>
-          <ul>
-            <li><strong>1492:</strong> Columbus → Amerika</li>
-            <li><strong>Vasco da Gama</strong> → Indien</li>
-            <li><strong>Magellan</strong> → jorden runt</li>
-          </ul>
-        </div>
-        <div class="info-block">
-          <h3>⚠️ Konsekvenser</h3>
-          <ul>
-            <li>Kolonier</li>
-            <li>Slaveri</li>
-            <li>Sjukdomar → urbefolkning dog</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- 5. EKONOMI -->
-      <div class="section-card" id="ekonomi">
-        <div class="section-icon">💰</div>
-        <h2>5. Ekonomi & Merkantilism</h2>
-        <div class="info-block">
-          <h3>📊 Merkantilism</h3>
-          <ul>
-            <li>Export &gt; import</li>
-            <li>Staten ska bli rik</li>
-            <li>Tullar och produktion</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- 6. ABSOLUTISM -->
-      <div class="section-card" id="absolutism">
-        <div class="section-icon">👑</div>
-        <h2>6. Absolutism (Envälde)</h2>
-        <p class="definition">Kungen har ALL makt ("av guds nåd")</p>
-        <div class="info-block">
-          <h3>👤 Exempel</h3>
-          <div class="person-chips">
-            <span class="chip">Ludvig XIV (Frankrike) → stark</span>
-            <span class="chip">Habsburg → svag</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 7. PARLAMENTARISM -->
-      <div class="section-card" id="parlamentarism">
-        <div class="section-icon">🏛️</div>
-        <h2>7. Parlamentarism (England)</h2>
-        <div class="info-block">
-          <h3>⚔️ Konflikten</h3>
-          <ul>
-            <li>Kung vs parlament</li>
-            <li>Inbördeskrig → kung <strong>avrättas</strong></li>
-          </ul>
-        </div>
-        <div class="info-block">
-          <h3>1688: Ärorika revolutionen</h3>
-          <ul>
-            <li>Maktdelning</li>
-            <li>Konstitutionell monarki</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- 8. VETENSKAPLIGA REVOLUTIONEN -->
+ 
       <div class="section-card wide" id="vetenskap">
         <div class="section-icon">🔬</div>
-        <h2>8. Vetenskapliga Revolutionen</h2>
+        <h2>Vetenskapliga Revolutionen</h2>
         <div class="two-col">
-          <div class="info-block">
-            <h3>🌌 Världsbilder</h3>
-            <ul>
-              <li><strong>Geocentrisk:</strong> Jorden i centrum (Ptolemaios)</li>
-              <li><strong>Heliocentrisk:</strong> Solen i centrum (Kopernikus)</li>
-            </ul>
+          <div>
+            <div class="info-block">
+              <h3>Kyrkans världsbild under medeltiden</h3>
+              <ul>
+                <li>Jorden i <strong>centrum</strong> av universum (geocentrisk)</li>
+                <li>Skapad av Gud, oföränderlig och perfekt</li>
+                <li>Stjärnorna fästa i kristallsfärer</li>
+                <li><em>Stämde ej:</em> Planeternas konstiga rörelser passade inte modellen</li>
+                <li>Observationer stämde inte med förutsägelserna</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Hur ställde sig kyrkan till vetenskapen?</h3>
+              <ul>
+                <li>Motstod idéer som hotade Bibelns auktoritet</li>
+                <li>Giordano Bruno – <strong>bränd på bål</strong> för oändligt universum</li>
+                <li>Galilei – <strong>dömd och husarresterad</strong> för heliocentrism</li>
+                <li>Kopernikus väntade med att publicera tills han låg för döden</li>
+              </ul>
+            </div>
           </div>
-          <div class="info-block">
-            <h3>🔭 Viktiga Forskare</h3>
-            <ul>
-              <li>🔭 <strong>Kopernikus</strong> – Solen i centrum</li>
-              <li>🔥 <strong>Giordano Bruno</strong> – Universum oändligt, bränd på bål</li>
-              <li>🧠 <strong>Tycho Brahe</strong> – Blandmodell</li>
-              <li>📐 <strong>Kepler</strong> – Elliptiska banor</li>
-              <li>🔭 <strong>Galileo Galilei</strong> – Teleskop, dömd av kyrkan</li>
-              <li>🍎 <strong>Newton</strong> – Gravitation</li>
-            </ul>
+          <div>
+            <div class="info-block">
+              <h3>Copernicus, Kepler, Galilei & Newton</h3>
+              <ul>
+                <li><strong>Copernicus:</strong> Lade fram heliocentrisk modell – solen i centrum</li>
+                <li><strong>Kepler:</strong> Bevisade att planeter rör sig i <em>ellipser</em>, inte cirklar</li>
+                <li><strong>Galilei:</strong> Teleskop, observerade Jupiters månar – bevisade att inte allt kretsar kring Jorden</li>
+                <li><strong>Newton:</strong> Gravitationslagen förklarade <em>varför</em> planeterna rör sig – band samman himmel och jord</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- 9. REFORMATIONEN -->
-      <div class="section-card" id="reformationen">
+ 
+      <div class="section-card wide" id="reformationen">
         <div class="section-icon">⛪</div>
-        <h2>9. Reformationen</h2>
-        <div class="info-block">
-          <h3>Martin Luther (1517)</h3>
-          <ul>
-            <li>95 teser</li>
-            <li>Kritiserade <strong>avlatsbrev</strong></li>
-            <li>Tro → frälsning</li>
-            <li>Bibeln viktigast</li>
-          </ul>
-        </div>
-        <div class="info-block">
-          <h3>👤 Andra</h3>
-          <div class="person-chips">
-            <span class="chip">Calvin → predestination</span>
-            <span class="chip">Zwingli → enklare kyrka</span>
+        <h2>Reformationen</h2>
+        <div class="two-col">
+          <div>
+            <div class="info-block">
+              <h3>Vad var ett avlatsbrev?</h3>
+              <ul>
+                <li>Ett brev som kyrkan sålde som garanterade förlåtelse för synder</li>
+                <li>Pengarna gick till kyrkan (bl.a. byggandet av Peterskyrkan i Rom)</li>
+                <li>Luther ansåg det vara korruption – man kan inte <strong>köpa</strong> frälsning</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Hur nådde man frälsning enligt Luther?</h3>
+              <ul>
+                <li>Genom <strong>tro allena</strong> (sola fide) – inte gärningar eller pengar</li>
+                <li>Katolska kyrkan: frälsning via kyrkan, sakrament och goda gärningar</li>
+                <li>Luther: direkt relation med Gud, Bibeln = högsta auktoritet</li>
+                <li>Ingen präst behövs som mellanhand</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Likheter mellan renässansen och Luthers budskap</h3>
+              <ul>
+                <li>Båda betonade <strong>individens</strong> förmåga att tänka och förstå</li>
+                <li>Båda ifrågasatte kyrkans monopol på sanningen</li>
+                <li>Humanister: läs antika texter själv. Luther: läs Bibeln själv</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="info-block">
+              <h3>Hur lockades bönder respektive furstar av Luther?</h3>
+              <ul>
+                <li><strong>Bönder:</strong> Hoppades att Luthers frihetstankar ledde till social frihet och lättnad från skatter</li>
+                <li><strong>Furstar:</strong> Ville ta kyrkans mark, slippa betala till påven, stärka sin makt mot kejsaren</li>
+                <li>Luther stödde furstarna när bönderna reste sig</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Två skillnader: kalvinism vs lutheranism</h3>
+              <ul>
+                <li><strong>Predestination:</strong> Calvin – Gud har redan bestämt vem som räddas. Luther – fri vilja inom tron</li>
+                <li><strong>Nattvarden:</strong> Calvin = symbolisk. Luther = Kristus verkligen närvarande i bröd/vin</li>
+                <li>Kalvinism = striktare moral och enklare gudstjänst</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- 10. MOTREFORMATION -->
-      <div class="section-card" id="motreformation">
-        <div class="section-icon">⚔️</div>
-        <h2>10. Motreformation</h2>
+ 
+      <div class="section-card" id="kartor">
+        <div class="section-icon">🗺️</div>
+        <h2>Kartor – Religionsinriktningar ca 1600</h2>
         <div class="info-block">
+          <h3>Vilka delar påverkades minst/mest av reformationen?</h3>
           <ul>
-            <li>Katolska kyrkan svarar</li>
-            <li><strong>Jesuitorden</strong></li>
-            <li><strong>Tridentinska mötet</strong></li>
+            <li><strong>Minst:</strong> Sydeuropa – Spanien, Portugal, Italien förblev katolska</li>
+            <li><strong>Störst förändring:</strong> Norra Europa – Skandinavien, England, Nordtyskland, Schweiz</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Wittenberg, Augsburg, Trento & Rom</h3>
+          <ul>
+            <li><strong>Wittenberg:</strong> Luther spikade sina 95 teser 1517 – reformationens startpunkt</li>
+            <li><strong>Augsburg:</strong> Augsburgfreden 1555 – furstar fick välja religion</li>
+            <li><strong>Trento:</strong> Tridentinska mötet – katolska kyrkans motreformation</li>
+            <li><strong>Rom:</strong> Påvens säte – katolicismens centrum</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Muslimer i Europa – var och varför?</h3>
+          <ul>
+            <li>På Balkan och i sydöstra Europa (osmanskt välde)</li>
+            <li>Osmanerna erövrade dessa områden → muslimsk befolkning bosatte sig där</li>
+            <li>Karl V:s rike gränsade mot det osmanska riket i öst</li>
           </ul>
         </div>
       </div>
-
-      <!-- 11. 30-ÅRIGA KRIGET -->
-      <div class="section-card" id="kriget">
+ 
+      <div class="section-card wide" id="krig">
         <div class="section-icon">💣</div>
-        <h2>11. 30-åriga Kriget <span class="era">(1618–1648)</span></h2>
-        <div class="info-block">
-          <h3>💥 Orsak</h3>
-          <ul>
-            <li>Katoliker vs protestanter</li>
-            <li>Maktkamp</li>
-          </ul>
+        <h2>Motreformation, Habsburg & 30-åriga Kriget</h2>
+        <div class="two-col">
+          <div>
+            <div class="info-block">
+              <h3>Vad var motreformationen?</h3>
+              <ul>
+                <li>Katolska kyrkans svar på protestantismen</li>
+                <li>Jesuitorden – spred katolsk tro via utbildning och mission</li>
+                <li>Tridentinska mötet – definierade katolsk lära tydligare</li>
+                <li>Inkvisitionen stärktes – kontrollerade kätteri</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Vilka stöttade kungarna för att stärka sin makt?</h3>
+              <ul>
+                <li><strong>Borgerskapet:</strong> Ville ha ordning och stabila lagar → stöttade kungen</li>
+                <li>I utbyte: borgarna fick handelsprivilegier</li>
+                <li>Kyrkan legitimerade kungens makt mot beskydd</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Varför blev krigföringen mer storskalig?</h3>
+              <ul>
+                <li>Nya vapen: krut, kanoner, musketer – kräver fler soldater</li>
+                <li>Starka stater hade råd med <strong>legosoldatarméer</strong></li>
+                <li>Religionskrigen mobiliserade stora folkmassor</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Hur påverkades civilbefolkningen av 1600-talens krig?</h3>
+              <ul>
+                <li>Legosoldater plundrade byar för mat och pengar</li>
+                <li>Svält och sjukdomar tog fler liv än striderna</li>
+                <li>Stora delar av tyska länder avfolkades</li>
+                <li>Tvångsförflyttningar och flykt var vanliga</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="info-block">
+              <h3>Habsburgs mål i 30-åriga kriget – gick det?</h3>
+              <ul>
+                <li>Mål: Återkatolicera riket och stärka makten över furstarna</li>
+                <li><em>Gick det?</em> Nej – Westfaliska freden 1648 stoppade dem</li>
+                <li>Furstarna behöll sin makt och sin religion</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Habsburgs motståndare & deras mål</h3>
+              <ul>
+                <li><strong>Protestantiska furstar:</strong> Behålla sin religion och självstyre</li>
+                <li><strong>Frankrike (katolskt!):</strong> Försvaga Habsburg – maktpolitik</li>
+                <li><strong>Sverige (Gustav II Adolf):</strong> Stödde protestanter + expanderade territorium</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Länder där centralmakten INTE stärktes</h3>
+              <ul>
+                <li><strong>Polen:</strong> Adelsvälde bromsade kungen</li>
+                <li><strong>Nederlanderna:</strong> Republik utan kung</li>
+                <li><strong>England:</strong> Parlamentet avrättade kungen → konstitutionell monarki</li>
+                <li><strong>Tysk-romerska riket:</strong> Furstarna vann mot kejsaren</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Hur stämmer trenderna in på Sverige?</h3>
+              <ul>
+                <li><strong>Erövringar:</strong> Ja – expanderade i Östersjöområdet</li>
+                <li><strong>Reformationen:</strong> Ja – Gustav Vasa bröt med Rom 1527</li>
+                <li><strong>Stärkt centralmakt:</strong> Ja – Gustav Vasa centraliserade makten</li>
+                <li><strong>Fler & större krig:</strong> Ja – stormakt under 1600-talet</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="info-block">
-          <h3>📌 Viktigt</h3>
+          <h3>Spaniens stormakts tillbakagång – orsaker</h3>
           <ul>
-            <li>Sverige deltog (<strong>Gustav II Adolf</strong>)</li>
-            <li>Väldigt brutalt krig</li>
-          </ul>
-        </div>
-        <div class="info-block">
-          <h3>🏳️ Slut: Westfaliska Freden</h3>
-          <ul>
-            <li>Sverige fick områden</li>
+            <li>Dyra krig på flera fronter tömde statskassan</li>
+            <li>Silverinflödet från Amerika skapade inflation</li>
+            <li>Utvisning av moriska och judiska köpmän → ekonomisk kompetens förlorades</li>
+            <li>Nederländerna revolterade och bröt sig loss</li>
           </ul>
         </div>
       </div>
-
-    </div><!-- /sections-grid -->
-
-    <!-- SNABBKOLL -->
+ 
+    </div>
+ 
     <div class="quick-ref">
       <h2>🔥 Viktigaste att kunna</h2>
       <div class="quick-grid">
-        <div class="quick-item">Renässansen = <strong>människan i centrum</strong></div>
-        <div class="quick-item">Humanism = <strong>tänka själv</strong></div>
-        <div class="quick-item">Upptäcktsresor = <strong>handel + kolonier</strong></div>
-        <div class="quick-item">Absolutism = <strong>kung har all makt</strong></div>
-        <div class="quick-item">Heliocentrisk = <strong>solen i centrum</strong></div>
-        <div class="quick-item">Reformationen = <strong>Luther protesterar</strong></div>
-        <div class="quick-item">30-åriga kriget = <strong>religion + makt</strong></div>
+        <div class="quick-item">Indianer = <strong>Columbus trodde det var Indien</strong></div>
+        <div class="quick-item">Sjövägen = <strong>billigare handel med Asien</strong></div>
+        <div class="quick-item">Amerika dog av <strong>europeiska sjukdomar</strong></div>
+        <div class="quick-item">Förlagssystem = <strong>tidig industriproduktion hemma</strong></div>
+        <div class="quick-item">Silver = <strong>inflation i Europa</strong></div>
+        <div class="quick-item">Luther = <strong>tro allena, inte pengar</strong></div>
+        <div class="quick-item">Calvin = <strong>predestination</strong></div>
+        <div class="quick-item">Newton = <strong>gravitation förklarar allt</strong></div>
+        <div class="quick-item">Westfaliska freden = <strong>furstarna vann mot Habsburg</strong></div>
+        <div class="quick-item">Sverige = <strong>stämmer in på alla trender</strong></div>
       </div>
     </div>
-
   </div>
-  <!-- /page-info -->
-
-  <!-- ============ FLASHCARDS PAGE ============ -->
+ 
+  <!-- FLASHCARDS PAGE -->
   <div id="page-flashcards" class="page">
     <div class="page-header">
       <h1>🃏 Flashcards</h1>
       <p class="subtitle">Välj ett ämne och testa dig själv</p>
     </div>
-
     <div class="topic-selector">
-      <button class="topic-btn active" onclick="setTopic('all')">Alla</button>
-      <button class="topic-btn" onclick="setTopic('renaissance')">🌍 Renässansen</button>
-      <button class="topic-btn" onclick="setTopic('humanism')">🎭 Humanism</button>
-      <button class="topic-btn" onclick="setTopic('resor')">🚢 Upptäcktsresor</button>
-      <button class="topic-btn" onclick="setTopic('vetenskap')">🔬 Vetenskap</button>
-      <button class="topic-btn" onclick="setTopic('religion')">⛪ Religion & Krig</button>
-      <button class="topic-btn" onclick="setTopic('politik')">👑 Politik</button>
+      <button class="topic-btn active" onclick="setTopic('all',event)">Alla</button>
+      <button class="topic-btn" onclick="setTopic('resor',event)">🚢 Upptäckter</button>
+      <button class="topic-btn" onclick="setTopic('ekonomi',event)">💰 Ekonomi</button>
+      <button class="topic-btn" onclick="setTopic('vetenskap',event)">🔬 Vetenskap</button>
+      <button class="topic-btn" onclick="setTopic('reformation',event)">⛪ Reformation</button>
+      <button class="topic-btn" onclick="setTopic('krig',event)">💣 Krig & Makt</button>
     </div>
-
     <div class="card-area">
       <div class="flashcard" id="flashcard" onclick="flipCard()">
         <div class="card-inner" id="cardInner">
           <div class="card-front">
             <div class="card-topic-label" id="cardTopic"></div>
-            <p id="cardQuestion">Klicka på ett ämne för att börja!</p>
+            <p id="cardQuestion">Välj ett ämne för att börja!</p>
           </div>
           <div class="card-back">
             <p id="cardAnswer"></p>
@@ -307,22 +428,19 @@
       </div>
       <p class="flip-hint">Klicka på kortet för att vända</p>
     </div>
-
     <div class="card-controls">
       <button class="ctrl-btn" onclick="prevCard()">← Föregående</button>
       <span class="card-counter" id="cardCounter">–</span>
       <button class="ctrl-btn" onclick="nextCard()">Nästa →</button>
     </div>
   </div>
-  <!-- /page-flashcards -->
-
-  <!-- ============ PRACTICE PAGE ============ -->
+ 
+  <!-- PRACTICE PAGE -->
   <div id="page-practice" class="page">
     <div class="page-header">
       <h1>🎯 Övning</h1>
       <p class="subtitle">Svara rätt på 80% för att klara nivån!</p>
     </div>
-
     <div class="progress-bar-wrap">
       <div class="progress-bar" id="progressBar"></div>
     </div>
@@ -330,23 +448,18 @@
       <span id="scoreText">0 rätt av 0</span>
       <span id="percentText" class="percent">–</span>
     </div>
-
     <div class="practice-box" id="practiceBox">
       <div class="q-topic" id="qTopic"></div>
       <h2 class="question-text" id="questionText">Laddar fråga...</h2>
-
       <div class="hint-area">
         <button class="hint-btn" id="hint1Btn" onclick="showHint(1)">💡 Liten hint</button>
         <button class="hint-btn" id="hint2Btn" onclick="showHint(2)">🔦 Stor hint</button>
         <div class="hint-box" id="hintBox"></div>
       </div>
-
       <input type="text" id="answerInput" class="answer-input" placeholder="Skriv ditt svar här..." />
       <button class="submit-btn" onclick="submitAnswer()">✅ Svara</button>
-
       <div class="feedback-box" id="feedbackBox"></div>
     </div>
-
     <div class="practice-win" id="practiceWin" style="display:none">
       <div class="win-emoji">🏆</div>
       <h2>Bra jobbat!</h2>
@@ -354,8 +467,8 @@
       <button class="submit-btn" onclick="restartPractice()">Kör igen!</button>
     </div>
   </div>
-  <!-- /page-practice -->
-
+ 
   <script src="script.js"></script>
 </body>
 </html>
+ 
